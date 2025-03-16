@@ -77,16 +77,16 @@ cabinet-medical/
 ├── src/
 │   ├── main/
 │   │   ├── java/com/cabinet/cabinetmedicale/
-│   │   │   ├── controller/          # Contrôleurs Spring MVC
-│   │   │   ├── entities/            # Entités JPA (Médecin, Patient, Consultation)
-│   │   │   ├── repository/          # Repositories Spring Data JPA
-│   │   │   ├── service/             # Services métier
+│   │   │   ├── controller/          
+│   │   │   ├── entities/            
+│   │   │   ├── repository/        
+│   │   │   ├── service/          
 │   │   ├── resources/
-│   │   │   ├── application.properties # Configuration de l'application
-│   │   │   ├── templates/           # Vues Thymeleaf
-│   │   │   ├── static/              # Fichiers statiques (CSS, JS, etc.)
-├── pom.xml                         # Configuration Maven
-└── README.md                       # Fichier README
+│   │   │   ├── application.properties 
+│   │   │   ├── templates/          
+│   │   │   ├── static/              
+├── pom.xml                         
+└── README.md
 ```
 
 ---
@@ -105,7 +105,7 @@ Les contributions sont les bienvenues ! Pour contribuer à ce projet, suivez les
 Ce projet est sous licence **MIT**. Pour plus de détails, consultez le fichier [LICENSE](LICENSE).
 
 ## Auteur
-- **Votre Nom** - Développeur Full-Stack  
+- KHALFI Ayoub 
 - Contact : [khalfiayoub65@gmail.com](mailto:khalfiayoub65@gmail.com)  
 - LinkedIn : [KHALFI Ayoub](www.linkedin.com/in/ayoub-khalfi-480739214)  
 
