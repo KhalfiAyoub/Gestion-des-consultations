@@ -54,12 +54,20 @@ Ce projet est une application de gestion pour un cabinet médical, permettant au
 
 ## Structure du projet
 
-Voici la structure principale du projet :
-
-cabinet-medical/ ├── src/ │ ├── main/ │ │ ├── java/com/cabinet/cabinetmedicale/ │ │ │ ├── controller/ # Contrôleurs Spring MVC │ │ │ ├── entities/ # Entités JPA │ │ │ ├── repository/ # Repositories Spring Data JPA │ │ │ ├── service/ # Services métier │ │ ├── resources/ │ │ │ ├── application.properties # Configuration de l'application │ │ │ ├── templates/ # Vues Thymeleaf │ │ │ ├── static/ # Fichiers statiques (CSS, JS, etc.) ├── pom.xml # Configuration Maven └── README.md # Fichier README
-
-markdown
-Copier
+cabinet-medical/
+├── src/
+│   ├── main/
+│   │   ├── java/com/cabinet/cabinetmedicale/
+│   │   │   ├── controller/          # Contrôleurs Spring MVC
+│   │   │   ├── entities/            # Entités JPA
+│   │   │   ├── repository/          # Repositories Spring Data JPA
+│   │   │   ├── service/             # Services métier
+│   │   ├── resources/
+│   │   │   ├── application.properties # Configuration de l'application
+│   │   │   ├── templates/           # Vues Thymeleaf
+│   │   │   ├── static/              # Fichiers statiques (CSS, JS, etc.)
+├── pom.xml                         # Configuration Maven
+└── README.md                       # Fichier README
 
 ## Contribution
 
