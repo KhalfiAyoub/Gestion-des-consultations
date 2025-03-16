@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil - Cabinet Médical</title>
+</head>
+<body>
+<section layout:fragment="content">
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="row align-items-center py-5">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+                <h1 class="display-4 fw-bold text-primary mb-3">Bienvenue au Cabinet Médical</h1>
+                <p class="lead text-secondary mb-4">Une solution complète pour gérer vos patients et consultations de façon efficace et sécurisée.</p>
+                <div class="d-flex gap-3">
+                    <a th:href="@{/patients}" class="btn btn-primary btn-lg">
+                        <i class="bi bi-people me-2"></i>Gérer les patients
+                    </a>
+                    <a th:href="@{/consultations}" class="btn btn-outline-primary btn-lg">
+                        <i class="bi bi-calendar-check me-2"></i>Voir les consultations
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

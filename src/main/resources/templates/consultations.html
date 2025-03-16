@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <meta charset="UTF-8">
+    <title>Consultations</title>
+</head>
+<body>
+<section layout:fragment="content">
+    <div class="container mb-5">
+        <h2 class="my-4">Liste des Consultations</h2>
+        <a class="btn btn-primary mb-3" th:href="@{/consultations/new}">Nouvelle Consultation</a>
+        <table class="table table-bordered table-striped table-hover text-center">
+            <thead style="background-color:#D3D3D3;">
+            <tr>
+                <th>ID</th>
+                <th>Date</th>
+                <th>Patient</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="consultation : ${consultations}">
+                <td th:text="${consultation.idConsultation}"></td>
+                <td th:text="${#temporals.format(consultation.dateConsultation, 'dd/MM/yyyy')}"></td>
+                <td th:if="${consultation.patient != null}"
+                    th:text="${consultation.patient.nom} + ' ' + ${consultation.patient.prenom}"></td>
+                <td th:unless="${consultation.patient != null}">Patient Inconnu</td>
+                <td th:text="${consultation.description}"></td>
+                <td class="d-flex justify-content-center align-items-center gap-3">
+                    <a th:href="@{/consultations/edit/{id}(id=${consultation.idConsultation})}"
+                       class="btn btn-success btn-sm">
+                        <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a th:href="@{/consultations/delete/{id}(id=${consultation.idConsultation})}"
+                       class="btn btn-danger btn-sm">
+                        <i class="bi bi-trash"></i>
+                    </a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+</body>
+</html>

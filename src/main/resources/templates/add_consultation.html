@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <meta charset="UTF-8">
+    <title>New Consultation</title>
+</head>
+<body>
+<section layout:fragment="content">
+    <div class="container">
+        <h2 class="my-4">New Consultation</h2>
+        <form th:action="@{/consultations}" th:object="${consultation}" method="post" class="card p-4">
+            <div class="mb-3">
+                <label class="form-label">Patient:</label>
+                <select class="form-select" th:field="*{patient.idPatient}">
+                    <option th:each="patient : ${patients}"
+                            th:value="${patient.idPatient}"
+                            th:text="${patient.nom + ' ' + patient.prenom}"></option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Date:</label>
+                <input type="date" class="form-control" th:field="*{dateConsultation}" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Description:</label>
+                <textarea class="form-control" th:field="*{description}" rows="3"></textarea>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="submit" class="btn btn-success">Enregistrer</button>
+                <a th:href="@{/consultations}" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+</section>
+</body>
+</html>

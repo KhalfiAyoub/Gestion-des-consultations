@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <meta charset="UTF-8">
+    <title>Patients</title>
+</head>
+<body>
+<section layout:fragment="content">
+    <div class="container mb-5">
+        <h2 class="my-4">Liste des patients</h2>
+        <a class="btn btn-primary mb-3" th:href="@{/patients/new}">Nouveau Patient</a>
+        <table class="table table-bordered table-striped table-hover text-center">
+            <thead style="background-color:#D3D3D3;">
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Email</th>
+                <th>Téléphone</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="patient : ${patients}">
+                <td th:text="${patient.idPatient}"></td>
+                <td th:text="${patient.nom}"></td>
+                <td th:text="${patient.prenom}"></td>
+                <td th:text="${patient.email}"></td>
+                <td th:text="${patient.tel}"></td>
+                <td class="d-flex justify-content-center align-items-center gap-3">
+                    <a th:href="@{/patients/edit/{id}(id=${patient.idPatient})}"
+                       class="btn btn-success btn-sm">
+                        <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a th:href="@{/patients/delete/{id}(id=${patient.idPatient})}"
+                       class="btn btn-danger btn-sm">
+                        <i class="bi bi-trash"></i>
+                    </a>
+                </td>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+</body>
+</html>

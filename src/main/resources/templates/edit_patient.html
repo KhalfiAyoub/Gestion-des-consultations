@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <meta charset="UTF-8">
+    <title>Modifier Patient</title>
+</head>
+<body>
+<section layout:fragment="content">
+    <div class="container">
+        <h2 class="my-4">Modifier Patient</h2>
+        <form th:action="@{/patients/{id}(id=${patient.idPatient})}" th:object="${patient}" method="post" class="card p-4">
+            <div class="mb-3">
+                <label class="form-label">Nom:</label>
+                <input type="text" class="form-control" th:field="*{nom}" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Prénom:</label>
+                <input type="text" class="form-control" th:field="*{prenom}" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email:</label>
+                <input type="email" class="form-control" th:field="*{email}">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Téléphone:</label>
+                <input type="tel" class="form-control" th:field="*{tel}">
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="submit" class="btn btn-primary">Enregistrer</button>
+                <a th:href="@{/patients}" class="btn btn-secondary">Annuler</a>
+            </div>
+        </form>
+    </div>
+</section>
+</body>
+</html>
