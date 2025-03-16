@@ -77,7 +77,7 @@ cabinet-medical/
 │   │   │   ├── templates/           
 │   │   │   ├── static/              
 ├── pom.xml                         
-└── README.md                       \
+└── README.md                       
 ```
 
 ---
