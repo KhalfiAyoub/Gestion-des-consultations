@@ -107,6 +107,6 @@ Ce projet est sous licence **MIT**. Pour plus de détails, consultez le fichier 
 ## Auteur
 - KHALFI Ayoub 
 - Contact : [khalfiayoub65@gmail.com](mailto:khalfiayoub65@gmail.com)  
-- LinkedIn : [KHALFI Ayoub](www.linkedin.com/in/ayoub-khalfi-480739214)  
+- LinkedIn : www.linkedin.com/in/ayoub-khalfi-480739214 
 
 ---
