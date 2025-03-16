@@ -62,6 +62,33 @@ Accédez à l'application via : [http://localhost:8080](http://localhost:8080).
 
 ---
 
+📸 Interfaces de l'Application
+1. Accueil
+![Accueil](https://github.com/user-attachments/assets/f56ec690-bb29-4b09-a672-258864ada210)
+La page d'accueil présente une introduction à l'application et des liens pour gérer les patients et les consultations.
+
+2. Gestion des Patients
+![Gestion Patient](https://github.com/user-attachments/assets/3adcc547-4fe2-4955-b041-c06d5bd24333)
+Cette interface permet d'ajouter, de modifier et de supprimer des patients. Les informations incluent le nom, le prénom, l'email et le téléphone.
+
+3. Nouveau Patient
+![Nouveau Patient](https://github.com/user-attachments/assets/279ef879-3368-405d-8203-08b8e44a570d)
+Formulaire pour ajouter un nouveau patient avec les champs : nom, prénom, email et téléphone.
+
+4. Gestion des Consultations
+![Consultation](https://github.com/user-attachments/assets/16c14b87-e803-4f2a-914a-99f452f2ffc8)
+Cette interface affiche la liste des consultations avec des détails tels que la date, le patient et la description. Les actions permettent de modifier ou de supprimer une consultation.
+
+5. Nouvelle Consultation
+![Nouveau Consultation](https://github.com/user-attachments/assets/4014ac01-d02d-4814-b829-e3bbaf3e43af)
+Formulaire pour ajouter une nouvelle consultation. Les champs incluent le patient, la date et la description.
+
+6. Contactez-nous
+![Contact](https://github.com/user-attachments/assets/b6aa8729-dd5e-453b-ba7b-94b63a3171c5)
+Page de contact avec l'adresse et le numéro de téléphone du cabinet médical.
+
+---
+
 ## 📂 Structure du Projet
 ```
 cabinet-medical/
