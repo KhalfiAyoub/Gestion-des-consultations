@@ -1,7 +1,7 @@
 # Cabinet Médical - Gestion des Consultations
 
 ## 📝 Description
-Cette application web permet de gérer un cabinet médical en simplifiant la gestion des consultations, des patients et des médecins. Les médecins peuvent ajouter et gérer des consultations, tandis que les patients peuvent accéder à leurs informations de consultation via un numéro de référence unique.
+Cette application permet de gérer un cabinet médical en simplifiant la gestion des consultations, des patients et des médecins. Les médecins peuvent ajouter et gérer des consultations, tandis que les patients peuvent accéder à leurs informations de consultation via un numéro de référence unique.
 
 Développée avec **Spring Boot**, **Thymeleaf**, et **MySQL**, l'application est conçue pour être robuste, scalable et facile à maintenir. Elle utilise **Lombok** pour réduire le code boilerplate et **Maven** pour la gestion des dépendances.
 
